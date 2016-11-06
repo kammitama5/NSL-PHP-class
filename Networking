@@ -1,0 +1,103 @@
+Intro to networking -NSL
+Cat-5
+RJ-11
+Data-link layer -Layer2
+Hex representation AA:BB:CC:DD:EE:FF
+Vendor-specific prefixes
+Linux/Mac:ifconfig
+Windows:ipconfig /all or getMAC on windows
+
+ARP-Address Resolution Protocol
+
+arp-a 
+
+to ping -c 1 (IP address) -> admin required
+
+ping (IP address)
+
+IP addresses:
+how computers see each other at Layer 3+
+
+Decimal representation (eg 111.222.333.444) numbers only 0-255 (octet)
+
+10.0.0.0/8 Class A private block
+172.16.0.0/12 -> 16 Continguous Class B block
+
+
+127 is for diagnostic testing 
+
+classes: 
+Class A: 1-126 
+Class B: 128-191
+Class C: 192-223
+Class D: 224-239
+Class E: 240-255
+
+netmask
+
+Modern CIDR
+
+DHCP: Dynamic Host Configuration Protocol
+DNS: Domain Name System
+
+dig+trace google.com
+
+nslookup google.com
+
+whois google.com
+
+Layer 4 -Transports(TCP/UDP)
+
+TCP "packets" -> Rudimentary sessioning, Receipt acknowledged
+UDP "datagrams" -> not acknowledged
+
+TCP Connection Flow
+
+OSI Model
+
+Layers 5+
+
+Almost always application controlled
+
+Examles:
+HTTP/HTTPS traffic
+Web
+FTP/SFTP
+SSH
+
+Switching Flooding
+Switching Forwarding
+
+Switching Broadcasts
+VLANs-> unless router is involved, VLANs cannot talk to each other
+
+Routing Static Routes
+
+Wireshark:
+
+Time to live: time before gives up
+
+ARP poisoning
+
+ip.dst_host==(host)
+
+nmap -> port scanning
+# shares
+SMB: file sharing protocol in Windows
+
+NTLM Authentication
+
+HTTP: all text
+
+HTTP headers/derivatives
+
+GET / HTTP/1.1
+GET -> type of request /->(main) HTTP/1.1 -> version
+Host (website name)
+
+traceroute (Windows)
+traceip
+ttl -> time to live
+
+route-n (Linux)
+route print
